@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<span>123</span>
+	<script>
+		var object1 = { "name": "zhangshuai" };
+		var object2 = object1;
+		object2.name = "wangba";
+		console.log(object1);
+
+		var arr1 = [1, 2, 3, 4];
+		console.log(arr1);
+		var arr2 = arr1;
+		arr2[0] = 8;
+		console.log(arr1);
+
+
+		var object3 = {};
+		var object4 = {};
+		console.log(object3 == object4);
+
+
+		var str = "ab_cd_ef";
+		console.log(str.slice(0, 2));
+		
+
+		var str2 = "sdfasdf";
+		var sstrObject = new String(str2);
+		strObject.substr(0,2);
+	</script>
+</body>
+
+</html>

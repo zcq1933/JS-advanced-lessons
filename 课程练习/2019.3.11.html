@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	var a = 45;
+	if(a == 1) {
+		console.log("test");
+	} 
+	else {
+		console.log("false");
+	}
+
+	// 两个等号有隐式的类型转换
+	var a1 = 20;
+	var a2 = "20";
+	if(a1 == a2) {
+		console.log("隐式类型转换成功");
+	}
+	if(a1 === a2) {
+		console.log("");
+	}
+	else {
+		console.log("三个等号没有隐式转换");
+	}
+
+	// 一元运算符
+
+	var x = "1";
+	console.log(++x);
+	var x = "1";
+	console.log(x++);
+	var x = "1";
+	console.log(x+=1);
+
+
+	// 关系运算、左真右，左假左
+	console.log(20&&0);
+	console.log(null && 10);
+	console.log(2 && 4);
+	console.log({x:2}&&{y:3});
+	var score = 10;
+	console.log((score>90&&"优")||(score>75&&"良")||(score>60&&"及格")||"不及格");
+
+
+
+	function sum(x,y,z) {2
+		y = y||2;
+		z = z||3;
+		return x + y + z;
+	}
+	console.log(sum(4,5,61));
+
+
+	function sum1(x,y=1,z=2) {
+		return x + y + z;
+	} 
+	sum1(10);
+
+
+	// 函数声明方式
+	// 显示声明
+	function sum(x,y) {
+		return x+y;
+	}
+
+	sum(1,2);
+
+	window.onload = function() {
+		alert("页面加载完成");
+
+	}
+
+
+	//定义到变量中
+	var sum1 = function() {
+		console.log("");
+	}
+
+	// 
+	var fn1 = new function('x','y','return x+y'); 
+	fn1(1,2);
+</script>
+</html>
